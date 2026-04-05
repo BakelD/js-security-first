@@ -1,28 +1,27 @@
 # js-security-first
 
-> JavaScript fundamentals with security-first approach — 
-> clean code patterns, AppSec awareness, 
-> production thinking from day one.
+> JavaScript fundamentals with security-first approach — clean code patterns, AppSec awareness, production thinking from
+> day one.
 
 ---
 
 ## 🎯 Goal
 
-Master JavaScript deeply — not just syntax, but how to write 
-code that is clean, predictable, and secure by default.
+Master JavaScript deeply — not just syntax, but how to write code that is clean, predictable, and secure by default.
 
 This repo follows a **two-pass learning system**:
+
 - **Pass 1** — GoIT JS 3.0 (Repin) + practice (Dykyy) + notes
-- **Pass 2** — Advanced JS (Melnik) + practice (Garnik) + 
-  Atlassian-level patterns + AppSec layer
+- **Pass 2** — Advanced JS (Melnik) + practice (Garnik) + Atlassian-level patterns + AppSec layer
 
 ---
 
 ## 📚 Structure
 
 Each module contains:
-- `notes.js` — lecture notes and key concepts
-- `practice.js` — exercises and homework
+
+- `notes/` — lecture notes by topic
+- `practice/` — exercises and homework tasks
 - `atlassian-patterns.js` — production-grade code patterns
 - `appsec-notes.md` — security awareness for this topic
 
@@ -30,20 +29,20 @@ Each module contains:
 
 ## 📊 Progress
 
-| Module | Topic | Pass 1 | Pass 2 | Atlassian | AppSec |
-|--------|-------|--------|--------|-----------|--------|
-| 01 | Variables, Types, Functions | ⬜ | ⬜ | ⬜ | ⬜ |
-| 02 | Arrays, Arguments | ⬜ | ⬜ | ⬜ | ⬜ |
-| 03 | Objects, Spread | ⬜ | ⬜ | ⬜ | ⬜ |
-| 04 | Array Iteration Methods | ⬜ | ⬜ | ⬜ | ⬜ |
-| 05 | this, Prototypes, Classes | ⬜ | ⬜ | ⬜ | ⬜ |
-| 06 | DOM, Events | ⬜ | ⬜ | ⬜ | ⬜ |
-| 07 | Event Patterns & Optimization | ⬜ | ⬜ | ⬜ | ⬜ |
-| 08 | Modules, Storage, Vite | ⬜ | ⬜ | ⬜ | ⬜ |
-| 09 | Async, Promises, Date | ⬜ | ⬜ | ⬜ | ⬜ |
-| 10 | HTTP, Fetch, Backend | ⬜ | ⬜ | ⬜ | ⬜ |
-| 11 | CRUD, Async Functions | ⬜ | ⬜ | ⬜ | ⬜ |
-| 12 | async/await, Pagination | ⬜ | ⬜ | ⬜ | ⬜ |
+| Module | Topic                         | Pass 1 | Pass 2 | Atlassian | AppSec |
+| ------ | ----------------------------- | ------ | ------ | --------- | ------ |
+| 01     | Variables, Types, Functions   | ⬜     | ⬜     | ⬜        | ⬜     |
+| 02     | Arrays, Arguments             | ⬜     | ⬜     | ⬜        | ⬜     |
+| 03     | Objects, Spread               | ⬜     | ⬜     | ⬜        | ⬜     |
+| 04     | Array Iteration Methods       | ⬜     | ⬜     | ⬜        | ⬜     |
+| 05     | this, Prototypes, Classes     | ⬜     | ⬜     | ⬜        | ⬜     |
+| 06     | DOM, Events                   | ⬜     | ⬜     | ⬜        | ⬜     |
+| 07     | Event Patterns & Optimization | ⬜     | ⬜     | ⬜        | ⬜     |
+| 08     | Modules, Storage, Vite        | ⬜     | ⬜     | ⬜        | ⬜     |
+| 09     | Async, Promises, Date         | ⬜     | ⬜     | ⬜        | ⬜     |
+| 10     | HTTP, Fetch, Backend          | ⬜     | ⬜     | ⬜        | ⬜     |
+| 11     | CRUD, Async Functions         | ⬜     | ⬜     | ⬜        | ⬜     |
+| 12     | async/await, Pagination       | ⬜     | ⬜     | ⬜        | ⬜     |
 
 ---
 
