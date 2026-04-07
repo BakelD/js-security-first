@@ -31,8 +31,8 @@ Each module contains:
 
 | Module | Topic                         | Pass 1 | Pass 2 | Atlassian | AppSec |
 | ------ | ----------------------------- | ------ | ------ | --------- | ------ |
-| 01     | Variables, Types, Functions   | ⬜     | ⬜     | ⬜        | ⬜     |
-| 02     | Arrays, Arguments             | ⬜     | ⬜     | ⬜        | ⬜     |
+| 01     | Variables, Types, Operators   | ⬜     | ⬜     | ⬜        | ⬜     |
+| 02     | Arrays, Functions             | ⬜     | ⬜     | ⬜        | ⬜     |
 | 03     | Objects, Spread               | ⬜     | ⬜     | ⬜        | ⬜     |
 | 04     | Array Iteration Methods       | ⬜     | ⬜     | ⬜        | ⬜     |
 | 05     | this, Prototypes, Classes     | ⬜     | ⬜     | ⬜        | ⬜     |
