@@ -34,3 +34,23 @@ if (Number.isNaN(price)) {
   const priceWithTaxes = (price + price * 0.19).toFixed(2);
   console.log(`Price: €${price} (with 19% VAT: €${priceWithTaxes})`);
 }
+
+//---------------------------------------------------------------------
+// task 03
+// Convert between px and rem (both directions)
+// Input: pixelString (string) e.g. "48px"
+//        remString (string) e.g. "1.5rem"
+// Base: 1rem = 16px
+// Example: "20px" → "20px = 1.25rem"
+//        "1.5rem" → "1.5rem = 24px"
+
+const pixelString = '20px';
+const remString = '1.5rem';
+
+const pixelAmount = Number.parseInt(pixelString);
+const remAmount = Number.parseFloat(remString);
+
+console.log(`${pixelString} = ${pixelAmount / 16}rem`); // '20px = 1.25rem'
+console.log(`${remString} = ${remAmount * 16}px`); // '1.5rem = 24px'
+
+//---------------------------------------------------------------------
