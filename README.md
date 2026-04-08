@@ -29,20 +29,20 @@ Each module contains:
 
 ## 📊 Progress
 
-| Module | Topic                         | Pass 1 | Pass 2 | Atlassian | AppSec |
-| ------ | ----------------------------- | ------ | ------ | --------- | ------ |
-| 01     | Variables, Types, Operators   | ⬜     | ⬜     | ⬜        | ⬜     |
-| 02     | Arrays, Functions             | ⬜     | ⬜     | ⬜        | ⬜     |
-| 03     | Objects, Spread               | ⬜     | ⬜     | ⬜        | ⬜     |
-| 04     | Array Iteration Methods       | ⬜     | ⬜     | ⬜        | ⬜     |
-| 05     | this, Prototypes, Classes     | ⬜     | ⬜     | ⬜        | ⬜     |
-| 06     | DOM, Events                   | ⬜     | ⬜     | ⬜        | ⬜     |
-| 07     | Event Patterns & Optimization | ⬜     | ⬜     | ⬜        | ⬜     |
-| 08     | Modules, Storage, Vite        | ⬜     | ⬜     | ⬜        | ⬜     |
-| 09     | Async, Promises, Date         | ⬜     | ⬜     | ⬜        | ⬜     |
-| 10     | HTTP, Fetch, Backend          | ⬜     | ⬜     | ⬜        | ⬜     |
-| 11     | CRUD, Async Functions         | ⬜     | ⬜     | ⬜        | ⬜     |
-| 12     | async/await, Pagination       | ⬜     | ⬜     | ⬜        | ⬜     |
+| Module | Topic                          | Pass 1 | Pass 2 | Atlassian | AppSec |
+| ------ | ------------------------------ | ------ | ------ | --------- | ------ |
+| 01     | Variables, Types, Operators    | ⬜     | ⬜     | ⬜        | ⬜     |
+| 02     | Branching, Loops               | ⬜     | ⬜     | ⬜        | ⬜     |
+| 03     | Arrays, Functions              | ⬜     | ⬜     | ⬜        | ⬜     |
+| 04     | Objects, Spread                | ⬜     | ⬜     | ⬜        | ⬜     |
+| 05     | Array Iteration Methods        | ⬜     | ⬜     | ⬜        | ⬜     |
+| 06     | OOP, this, Prototypes, Classes | ⬜     | ⬜     | ⬜        | ⬜     |
+| 07     | DOM, Events                    | ⬜     | ⬜     | ⬜        | ⬜     |
+| 08     | Event Patterns & Optimization  | ⬜     | ⬜     | ⬜        | ⬜     |
+| 09     | Modules, JSON, Storage, Vite   | ⬜     | ⬜     | ⬜        | ⬜     |
+| 10     | Async, Promises, Fetch, Date   | ⬜     | ⬜     | ⬜        | ⬜     |
+| 11     | HTTP, AJAX, Axios              | ⬜     | ⬜     | ⬜        | ⬜     |
+| 12     | async/await, Pagination        | ⬜     | ⬜     | ⬜        | ⬜     |
 
 ---
 
