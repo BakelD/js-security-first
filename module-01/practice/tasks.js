@@ -54,3 +54,20 @@ console.log(`${pixelString} = ${pixelAmount / 16}rem`); // '20px = 1.25rem'
 console.log(`${remString} = ${remAmount * 16}px`); // '1.5rem = 24px'
 
 //---------------------------------------------------------------------
+// task 04
+// Ticket pricing system
+// Input: ticketNumber (number)
+// Even tickets → VIP seat, Odd tickets → Standard seat
+// Output: string with ticket info
+// Example: 1042 → "Ticket #1042 — VIP seat (even number)"
+//          2571 → "Ticket #2571 — Standard seat (odd number)"
+
+const ticketNumber = 1042;
+
+if (!(ticketNumber % 2)) {
+  console.log(`Ticket #${ticketNumber} - VIP seat (even number)`);
+} else {
+  console.log(`Ticket #${ticketNumber} - Standard seat (odd number)`);
+}
+
+//---------------------------------------------------------------------
