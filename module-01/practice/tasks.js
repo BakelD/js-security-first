@@ -71,3 +71,27 @@ if (!(ticketNumber % 2)) {
 }
 
 //---------------------------------------------------------------------
+// task 05
+// Case-insensitive banned word checker
+// Input: comment (string), bannedWord (string)
+// Steps: normalize both → check includes → log result
+//        bannedWord: 'absolutely spam'
+// Output:
+//   if found → "⚠️ Comment contains banned word: '[bannedWord]'"
+//   if not found → "✅ Comment is clean"
+
+const comment = 'This product is aBsOlUtElY SPAM!!!';
+// const comment = 'Great product, highly recommended!';
+
+const bannedWord = 'absolutely spam';
+
+const sanitizedComment = comment.toLowerCase();
+const sanitizedBannedWord = bannedWord.toLowerCase();
+
+if (sanitizedComment.includes(sanitizedBannedWord)) {
+  console.log(`⚠️ Comment contains banned word: ${bannedWord}`);
+} else {
+  console.log('✅ Comment is clean');
+}
+
+//---------------------------------------------------------------------
