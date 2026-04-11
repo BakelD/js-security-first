@@ -95,3 +95,16 @@ if (sanitizedComment.includes(sanitizedBannedWord)) {
 }
 
 //---------------------------------------------------------------------
+// task 06
+// Credit card masking for display
+// Input: creditCard (string) — 16 digit card number
+// Steps: get last 4 digits → pad the rest with '*'
+// Example: '1234567812345678' → '************5678'
+// Output: "Payment confirmed. Card: ************5678"
+
+const creditCard = '1234567812345678';
+const maskedCard = creditCard.slice(-4).padStart(creditCard.length, '*');
+
+console.log(`Payment confirmed. Card: ${maskedCard}`);
+
+//---------------------------------------------------------------------
