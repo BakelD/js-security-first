@@ -108,3 +108,94 @@ const maskedCard = creditCard.slice(-4).padStart(creditCard.length, '*');
 console.log(`Payment confirmed. Card: ${maskedCard}`);
 
 //---------------------------------------------------------------------
+// task 07
+// Discount price calculator
+// Input: priceStr (string) e.g. '€1.299,99'
+//        discountStr (string) e.g. '15%'
+// Steps: clean price string → convert to number
+//        clean discount string → convert to number
+//        calculate discounted price
+// Output: "Original: €1299.99 | Discount: 15% | Final: €1104.99"
+// Test with: '€1.299,99', '15%'
+
+const priceStr = '€1.299,99';
+const discountStr = '15%';
+
+const cleanedPrice = priceStr.slice(1).replace('.', '').replace(',', '.');
+const amount = Number.parseFloat(cleanedPrice);
+const discount = Number.parseFloat(discountStr);
+
+const finalPrice = amount - amount * (discount / 100);
+
+console.log(`Original: €${amount.toFixed(2)} | Discount: ${discount}% | Final: €${finalPrice.toFixed(2)}`);
+
+//---------------------------------------------------------------------
+// task 08
+// Flight boarding pass generator
+// Input: firstName (string), lastName (string),
+//        flightCode (string) e.g. 'lh 472 a',
+//        seatStr (string) e.g. '9a'
+// Steps:
+//   normalize all strings (trim, uppercase where needed)
+//   seat row must be padded to 2 digits
+// Output:
+//   "BOARDING PASS"
+//   "Passenger: BAKEL, DANIEL"
+//   "Flight: LH472A | Seat: 09A"
+// Test with: ' daniel ', ' bakel ', 'lh 472 a', '9a'
+
+const firstName = ' daniel ';
+const lastName = 'bakel ';
+const flightCode = 'lh 472 a';
+const seatStr = '9a';
+
+const sanitizedFirstName = firstName.trim().toUpperCase();
+const sanitizedLastName = lastName.trim().toUpperCase();
+const sanitizedFlightCode = flightCode.replaceAll(' ', '').toUpperCase();
+const sanitizedSeat = seatStr.padStart(3, 0).toUpperCase();
+
+const boardingPass = `BOARDING PASS
+Passenger: ${sanitizedLastName}, ${sanitizedFirstName}
+Flight: ${sanitizedFlightCode} | Seat: ${sanitizedSeat}`;
+
+console.log(boardingPass);
+
+//---------------------------------------------------------------------
+// task 09
+// Slug formatter
+// Input: title (string) e.g. '  JavaScript: The Good Parts!!!  '
+// Steps: trim → lowercase → remove !?: → replace spaces with '-'
+// Output: 'javascript-the-good-parts'
+// Test with: '  JavaScript: The Good Parts!!!  '
+//            '  Hello World! This is My Article  '
+
+const title = '  JavaScript: The Good Parts!!!  ';
+// const title = '  Hello World! This is My Article  ';
+
+const slug = title.trim().toLowerCase().replace(/[!?:]/g, '').replaceAll(' ', '-');
+console.log(slug);
+
+//---------------------------------------------------------------------
+// task 10
+// Chat availability checker
+// Input: isFriend (boolean), isOnline (boolean), isBusy (boolean)
+// Rule: can start chat only if friend AND online AND not busy
+// Output:
+//   "💬 Start chat" — all conditions met
+//   "🚫 Cannot start chat" — any condition fails
+// Test with: true, true, false   → can chat
+//            true, true, true    → busy
+//            true, false, false  → offline
+//            false, true, false  → not a friend
+
+const isFriend = true;
+const isOnline = true;
+const isBusy = false;
+
+const canStartChat = isFriend && isOnline && !isBusy;
+
+if (canStartChat) {
+  console.log('💬 Start chat');
+} else {
+  console.log('🚫 Cannot start chat');
+}
