@@ -31,7 +31,7 @@ Each module contains:
 
 | Module | Topic                          | Pass 1 | Pass 2 | Atlassian | AppSec |
 | ------ | ------------------------------ | ------ | ------ | --------- | ------ |
-| 01     | Variables, Types, Operators    | ⬜     | ⬜     | ⬜        | ⬜     |
+| 01     | Variables, Types, Operators    | ✅     | ⬜     | ⬜        | ⬜     |
 | 02     | Branching, Loops               | ⬜     | ⬜     | ⬜        | ⬜     |
 | 03     | Arrays, Functions              | ⬜     | ⬜     | ⬜        | ⬜     |
 | 04     | Objects, Spread                | ⬜     | ⬜     | ⬜        | ⬜     |
