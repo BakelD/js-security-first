@@ -27,6 +27,7 @@ if (myScore > opponentScore) {
 // --------------------------------------------
 //* ?: ternary operator
 
+// best use: 2 outcomes, assigning a value to a variable
 const result = myScore > opponentScore ? 'I won.' : 'I lost.';
 console.log(result);
 
