@@ -64,3 +64,36 @@ const ageVerificationMsg = age >= 18 ? '✅ Purchase allowed' : '🔞 Sorry, you
 console.log(ageVerificationMsg);
 
 //---------------------------------------------------------------------
+// task 03
+// Day type checker
+// Input: day (string) e.g. 'Monday'
+// Output:
+//   'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday' → "💼 Workday"
+//   'Saturday', 'Sunday' → "🎉 Weekend"
+//   other → "🚫 Invalid day"
+// Use switch with fall-through pattern
+
+const day = 'Monday';
+
+switch (day) {
+  case 'Monday':
+  case 'Tuesday':
+  case 'Wednesday':
+  case 'Thursday':
+  case 'Friday': {
+    console.log('💼 Workday');
+    break;
+  }
+
+  case 'Saturday':
+  case 'Sunday': {
+    console.log('🎉 Weekend');
+    break;
+  }
+
+  default: {
+    console.log('🚫 Invalid day');
+  }
+}
+
+//---------------------------------------------------------------------
