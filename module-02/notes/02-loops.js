@@ -45,3 +45,41 @@ for (let i = min; i <= max; i += 1) {
   console.log(i);
 }
 console.log('----------------------');
+
+//---------------------------------------------------------------------
+//* while
+//  use when number of iterations is unknown in advance
+
+const secret = 7;
+let guess = 0;
+let attempts = 0;
+
+while (guess !== secret) {
+  guess = Math.floor(Math.random() * 10) + 1;
+  attempts += 1;
+
+  console.log(`Attempt ${attempts}: guessed ${guess}`);
+}
+
+console.log(`✅ Found! It took ${attempts} attempts`);
+
+//---------------------------------------------------------------------
+//* do/while
+// executes at least once — condition checked AFTER first run
+
+let userPassword;
+
+do {
+  userPassword = prompt('Enter password (3-12 characters):');
+} while (userPassword === null || userPassword.length < 3 || userPassword.length > 12);
+
+console.log(`✅ Password accepted`);
+
+//----------------------
+//! condition - false ... still do/while executes once
+
+let i = 100;
+
+do {
+  console.log(i);
+} while (i <= 10);
