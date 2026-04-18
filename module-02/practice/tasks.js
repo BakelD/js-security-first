@@ -135,3 +135,71 @@ for (let i = start; i >= end; i -= step) {
 console.log('🔥 Launch!');
 
 //---------------------------------------------------------------------
+// task 06
+// Print all odd numbers in range
+// Input: min (number), max (number)
+// Two solutions:
+//   Solution 1 — full loop with odd check (step 1, filter inside)
+//   Solution 2 — smart start + step 2 (no check needed)
+// Output: print each odd number on new line
+// Test with: min = 2, max = 20
+
+const min = 2;
+const max = 20;
+
+// 1
+for (let i = min; i <= max; i += 1) {
+  if (i % 2) {
+    console.log(i);
+  }
+}
+console.log('-----------------------');
+
+// smart start
+const smartStart = !(min % 2) ? min + 1 : min;
+
+for (let i = smartStart; i <= max; i += 2) {
+  console.log(i);
+}
+console.log('-----------------------');
+
+//---------------------------------------------------------------------
+// task 07
+// Interactive number sum collector
+// Ask user for a number 3 times using prompt()
+// Output:
+//   each round → "Enter number [count] of [attempts]:"
+//   invalid input → "[input] is not a number. Try again!" (skip, don't count)
+//   cancelled → "You finished the game !!!" + stop loop
+//   end → "Total sum is [sum]"
+// Rules:
+//   if prompt returns null → cancelled → stop
+//   if input is not a number → skip iteration
+//   count only valid numbers toward the 3 total
+
+const numOfAttempts = 3;
+let total = 0;
+let counter = 1;
+
+while (counter <= numOfAttempts) {
+  const userAnswer = prompt(`Enter number ${counter} of ${numOfAttempts}:`);
+
+  if (userAnswer === null) {
+    alert('You finished the game !!!');
+    break;
+  }
+
+  const num = Number(userAnswer);
+
+  if (Number.isNaN(num)) {
+    alert(`${userAnswer} is not a number. Try again!`);
+    continue;
+  }
+
+  total += num;
+  counter += 1;
+}
+
+alert(`Total sum is ${total}`);
+
+//---------------------------------------------------------------------
