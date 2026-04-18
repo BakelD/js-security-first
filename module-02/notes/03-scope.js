@@ -1,5 +1,14 @@
 //* scope
 
+const x = 10;
+
+if (true) {
+  // let x = x + 10; //! ReferenceError: Cannot access 'x' before initialization
+  //      ↑ TDZ
+  // console.log(x);
+}
+
+// --------------------------------------------
 let a = 10;
 
 if (true) {
