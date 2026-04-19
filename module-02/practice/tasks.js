@@ -203,3 +203,75 @@ while (counter <= numOfAttempts) {
 alert(`Total sum is ${total}`);
 
 //---------------------------------------------------------------------
+// task 08
+// Number guessing game
+// Generate random number from 1 to 100
+// Ask user to guess until correct
+// Rules:
+//   if prompt returns null → cancelled → stop
+//   invalid input → "⚠️ Invalid number. Try again!" (skip, don't count)
+//   guess too high → "⬇️ Lower!" hint
+//   guess too low → "⬆️ Higher!" hint
+//   correct → "🎯 You won! Number [n] was guessed in [attempts] attempts"
+// Use do/while — must ask at least once
+
+const minNum = 1;
+const maxNum = 101;
+
+const targetNum = Math.floor(Math.random() * (maxNum - minNum)) + minNum;
+
+let attemptsCount = 0;
+let guess;
+
+do {
+  guess = prompt('Guess number from 0 to 100');
+
+  if (guess === null) {
+    alert('❌ Game stopped!');
+    break;
+  }
+
+  guess = Number(guess);
+
+  if (Number.isNaN(guess)) {
+    alert('⚠️ Invalid number. Try again!');
+    continue;
+  }
+
+  if (guess > targetNum) {
+    alert('⬇️ Lower!');
+  } else if (guess < targetNum) {
+    alert('⬆️ Higher!');
+  }
+
+  attemptsCount += 1;
+} while (guess !== targetNum);
+
+if (guess !== null) {
+  alert(`🎯 You won! Number ${targetNum} was guessed in ${attemptsCount} attempts`);
+}
+
+//---------------------------------------------------------------------
+// task 09
+// Scope challenge — predict the output before running
+
+let some = 'outer';
+
+if (some) {
+  some = 'inner';
+
+  if (!some) {
+    // skipped — 'some' is truthy
+    some = 'super inner';
+  }
+
+  if (1) {
+    // console.log(some); //! ReferenceError: Cannot access 'some' before initialization
+
+    const some = 'some';
+  }
+}
+
+console.log(some); // 'inner'
+
+//---------------------------------------------------------------------
