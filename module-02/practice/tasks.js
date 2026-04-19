@@ -275,3 +275,53 @@ if (some) {
 console.log(some); // 'inner'
 
 //---------------------------------------------------------------------
+// task 10 — FizzBuzz ⭐
+// FizzBuzz — classic interview challenge
+// Loop from 1 to 100
+// Rules:
+//   divisible by 3 AND 5 → "FizzBuzz"
+//   divisible by 3 only  → "Fizz"
+//   divisible by 5 only  → "Buzz"
+//   otherwise            → the number
+// Solve with two approaches:
+//   Solution 1 — explicit conditions with early return (continue)
+//   Solution 2 — string accumulator approach (elegant)
+
+// 1
+for (let i = 1; i <= 100; i += 1) {
+  let output = `${String(i).padStart(3, 0)}`;
+
+  if (!(i % 3) && !(i % 5)) {
+    console.log(`${output} FizzBuzz`);
+    continue;
+  }
+
+  if (!(i % 3)) {
+    console.log(`${output} Fizz`);
+    continue;
+  }
+
+  if (!(i % 5)) {
+    console.log(`${output} Buzz`);
+    continue;
+  }
+
+  console.log(output);
+}
+
+// 2
+for (let i = 1; i <= 100; i += 1) {
+  let output = '';
+
+  if (!(i % 3)) {
+    output += 'Fizz';
+  }
+
+  if (!(i % 5)) {
+    output += 'Buzz';
+  }
+
+  console.log(output || i);
+}
+
+//---------------------------------------------------------------------
